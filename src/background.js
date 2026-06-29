@@ -72,16 +72,16 @@ chrome.action.onClicked.addListener(async (tab) => {
       tabId: tab.id,
       path: newState
         ? {
-            "16": "icons/icon1.png",
-            "32": "icons/icon1.png",
-            "48": "icons/icon1.png",
-            "128": "icons/icon1.png",
+            "16": "icons/icon1_16.png",
+            "32": "icons/icon1_32.png",
+            "48": "icons/icon1_48.png",
+            "128": "icons/icon1_128.png",
           }
         : {
-            "16": "icons/icon2.png",
-            "32": "icons/icon2.png",
-            "48": "icons/icon2.png",
-            "128": "icons/icon2.png",
+            "16": "icons/icon2_16.png",
+            "32": "icons/icon2_32.png",
+            "48": "icons/icon2_48.png",
+            "128": "icons/icon2_128.png",
           }
     });
 
@@ -103,7 +103,7 @@ chrome.action.onClicked.addListener(async (tab) => {
     try {
       await chrome.notifications.create({
         type: 'basic',
-        iconUrl: 'icons/icon1.png',
+        iconUrl: 'icons/icon1_128.png',
         title: 'Darkument Error',
         message: 'Unable to toggle dark mode on this page.',
         priority: 1
@@ -135,16 +135,16 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
         tabId: tabId,
         path: isActive
           ? {
-              "16": "icons/icon1.png",
-              "32": "icons/icon1.png",
-              "48": "icons/icon1.png",
-              "128": "icons/icon1.png",
+              "16": "icons/icon1_16.png",
+              "32": "icons/icon1_32.png",
+              "48": "icons/icon1_48.png",
+              "128": "icons/icon1_128.png",
             }
           : {
-              "16": "icons/icon2.png",
-              "32": "icons/icon2.png",
-              "48": "icons/icon2.png",
-              "128": "icons/icon2.png",
+              "16": "icons/icon2_16.png",
+              "32": "icons/icon2_32.png",
+              "48": "icons/icon2_48.png",
+              "128": "icons/icon2_128.png",
             }
       });
     } catch (error) {
@@ -188,7 +188,7 @@ chrome.runtime.onInstalled.addListener(async (details) =>{
         try {
           const notificationId = await chrome.notifications.create({
             type: 'basic',
-            iconUrl: 'icons/icon1.png',
+            iconUrl: 'icons/icon1_128.png',
             title: '🌙 Darkument Setup Required',
             message: 'Please enable "Allow access to file URLs" in extension settings to use Darkument with local PDF files.',
             priority: 2,
@@ -223,7 +223,7 @@ chrome.runtime.onInstalled.addListener(async (details) =>{
             try {
               await chrome.notifications.create({
                 type: 'basic',
-                iconUrl: 'icons/icon1.png',
+                iconUrl: 'icons/icon1_128.png',
                 title: '🎉 Darkument Ready!',
                 message: 'File access enabled! You can now use Darkument with local PDF files.',
                 priority: 2

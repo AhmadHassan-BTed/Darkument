@@ -5,12 +5,18 @@
   "description": "Invert PDFs, Documents and Web-Pages. Study late-nights wish me well :) by Ahmad Hassan.",
   "action": {
     "default_title": "Activate Darkument",
-    "default_icon": "icons/icon.png"
+    "default_icon": {
+      "16": "icons/icon_16.png",
+      "32": "icons/icon_32.png",
+      "48": "icons/icon_48.png",
+      "128": "icons/icon_128.png"
+    }
   },
   "icons": {
-    "16": "icons/icon.png",
-    "48": "icons/icon.png",
-    "128": "icons/icon.png"
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
   },
   "permissions": [
     "scripting",

@@ -5,7 +5,7 @@
   "main": "src/background.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "powershell -Command \"Compress-Archive -Path src/* -DestinationPath build/Darkument-v$($env:npm_package_version).zip -Force\"",
+    "build": "powershell -Command \"New-Item -ItemType Directory -Force -Path build; Compress-Archive -Path src/* -DestinationPath build/Darkument-v$($env:npm_package_version).zip -Force\"",
     "clean": "rm -rf build/*.zip"
   },
   "keywords": [
