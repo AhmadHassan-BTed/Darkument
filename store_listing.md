@@ -57,11 +57,11 @@ English
 
 ## 🎨 Graphic Assets
 
-All graphic assets below have been prepared to meet the Chrome Web Store format requirements. They are saved in the [store_assets](file:///c:/Users/PMLS/Downloads/Darkument/store_assets) folder.
+All graphic assets below have been prepared to meet the Chrome Web Store format requirements. They are saved in the [store_assets](./store_assets) folder.
 
 ### Store Icon
 - **Requirement**: 128x128 pixels (PNG/JPEG)
-- **Path to upload**: [store_assets/store_icon.png](file:///c:/Users/PMLS/Downloads/Darkument/store_assets/store_icon.png)
+- **Path to upload**: [store_assets/store_icon.png](./store_assets/store_icon.png)
 - **Properties**: 128x128, 32-bit PNG (with transparency support)
 
 ### Global Promo Video
@@ -71,18 +71,18 @@ All graphic assets below have been prepared to meet the Chrome Web Store format 
 ### Screenshots
 - **Requirement**: 1280x800 or 640x400 (JPEG or 24-bit PNG without alpha channel). Up to 5 screenshots. At least 1 is required.
 - **Paths to upload**:
-  1. [store_assets/screenshots/screenshot1.png](file:///c:/Users/PMLS/Downloads/Darkument/store_assets/screenshots/screenshot1.png) (1280x800, 24-bit RGB PNG)
-  2. [store_assets/screenshots/screenshot2.png](file:///c:/Users/PMLS/Downloads/Darkument/store_assets/screenshots/screenshot2.png) (1280x800, 24-bit RGB PNG)
-  3. [store_assets/screenshots/screenshot3.png](file:///c:/Users/PMLS/Downloads/Darkument/store_assets/screenshots/screenshot3.png) (1280x800, 24-bit RGB PNG)
+  1. [store_assets/screenshots/screenshot1.png](./store_assets/screenshots/screenshot1.png) (1280x800, 24-bit RGB PNG)
+  2. [store_assets/screenshots/screenshot2.png](./store_assets/screenshots/screenshot2.png) (1280x800, 24-bit RGB PNG)
+  3. [store_assets/screenshots/screenshot3.png](./store_assets/screenshots/screenshot3.png) (1280x800, 24-bit RGB PNG)
 
 ### Small Promo Tile
 - **Requirement**: 440x280 Canvas (JPEG or 24-bit PNG without alpha channel)
-- **Path to upload**: [store_assets/small_promo_tile.png](file:///c:/Users/PMLS/Downloads/Darkument/store_assets/small_promo_tile.png)
+- **Path to upload**: [store_assets/small_promo_tile.png](./store_assets/small_promo_tile.png)
 - **Properties**: 440x280, 24-bit RGB PNG
 
 ### Marquee Promo Tile
 - **Requirement**: 1400x560 Canvas (JPEG or 24-bit PNG without alpha channel)
-- **Path to upload**: [store_assets/marquee_promo_tile.png](file:///c:/Users/PMLS/Downloads/Darkument/store_assets/marquee_promo_tile.png)
+- **Path to upload**: [store_assets/marquee_promo_tile.png](./store_assets/marquee_promo_tile.png)
 - **Properties**: 1400x560, 24-bit RGB PNG
 
 ---
@@ -173,9 +173,17 @@ Provide these reasons in the text boxes next to each declared permission:
 
 ## ✉️ Settings Page Setup
 
-Go to the **Settings** tab in the developer console (left navigation bar) and complete the following steps to resolve contact email errors:
-1. Under **Developer communication**, find the **Publisher email** text box.
+Go to the **Settings** tab in the developer console (left navigation bar) and complete the following steps to resolve contact email and trader verification errors:
+
+### 1. Developer Communication (Email)
+1. Find the **Publisher email** text box.
 2. Enter your public publisher/contact email address.
 3. Click **Save** at the top right.
 4. Go to your email inbox, find the verification email sent by Google Chrome Web Store Developer Support, and click the confirmation link.
+
+### 2. Trader Declaration (EEA Consumer Laws)
+- **Field**: `Declare if your publisher account is considered a trader or non-trader...`
+- **Value**: Select **This is a non-trader account**.
+- **Reason**: Since Darkument is a free, open-source tool built as a student project with no monetization, ads, or commercial services, you are legally considered a **non-trader**. Selecting this avoids the requirement to display your private physical address and phone number publicly on the Web Store listing.
+
 
