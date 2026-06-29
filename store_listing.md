@@ -20,9 +20,11 @@ Invert PDFs, Documents and Web-Pages. Study late-nights wish me well :) by Ahmad
 
 ### Description
 ```text
-🌙 Darkument is a sleek, lightweight, and high-performance browser extension designed to instantly invert colors on PDFs, documents, and web pages, making late-night reading and study sessions easy on your eyes.
+Darkument transforms bright screens into a soothing dark mode, specially built to support PDFs in inverted colors for late-night reading comfort. It works seamlessly on documents, web pages, and most importantly, those eye-burning white PDFs.
 
-Have you ever opened a study guide or research PDF at midnight, only to be blinded by a harsh white background? Traditional dark mode extensions often break complex document layouts, slow down page loading times, or fail completely when trying to invert PDF structures. Darkument solves this using a smart, GPU-accelerated mathematical overlay strategy.
+I'm a student who studies and works long into the night, and I made it for others like me. Think of it as a small gift from one student to another. Stay focused, stay comfortable, and wishing you good luck :) by Ahmad Hassan.
+
+---
 
 Key Features:
 🚀 Native PDF Inversion: Works seamlessly with Chrome's native PDF reader. Invert both local (file:///) and web-hosted PDF files with a single click.
@@ -35,16 +37,15 @@ How to Use:
 1. Pin Darkument to your toolbar.
 2. Click the icon to activate/deactivate color inversion instantly.
 3. The current state is shown on the action badge (ON/OFF) with a visual indicator.
-
-Make your late-night reading comfortable today with Darkument!
 ```
 *(Focuses on what the item does and why users should install it. Max 16,000 characters)*
 
 ### Category
 ```text
-Productivity
+Make Chrome Yours > Accessibility
+(OR: Productivity > Tools / Productivity)
 ```
-*(Recommended primary category. Alternative: "Accessibility" or "Developer Tools")*
+*(Primary choice: Accessibility under the "Make Chrome Yours" section, as it adapts documents for night reading and eye protection. Alternate choice: Productivity or Tools under "Productivity" section)*
 
 ### Language
 ```text
@@ -106,3 +107,75 @@ All graphic assets below have been prepared to meet the Chrome Web Store format 
 ### Item Support
 - **Value**: `Turn On`
 *(Allows users to ask questions and report bugs directly on your store listing)*
+
+---
+
+## 🔒 Privacy Practices & Permissions Justifications
+
+Go to the **Privacy practices** tab in the Chrome Web Store Developer Console to fill in these fields:
+
+### 1. Single Purpose Description
+```text
+The single purpose of Darkument is to provide high-fidelity color inversion on PDFs and web documents to reduce eye strain during late-night reading and study sessions.
+```
+
+### 2. Permission Justifications
+Provide these reasons in the text boxes next to each declared permission:
+
+- **`activeTab`**:
+  ```text
+  Required to temporarily grant the extension access to the active document viewport only when the user explicitly clicks the toolbar icon to toggle color inversion.
+  ```
+- **`host_permissions` / `<all_urls>` and `file:///*`**:
+  ```text
+  Required to apply color inversion overlays across all web domains and offline local file URLs (such as local PDFs) when activated by the user.
+  ```
+- **`notifications`**:
+  ```text
+  Used to display quick alerts to the user (e.g., instructing them on how to enable local file access settings, or confirming that the file access was successfully granted).
+  ```
+- **`scripting`**:
+  ```text
+  Required to dynamically inject the color inversion overlay and stylesheet rules into the document viewport when toggled by the user.
+  ```
+- **`tabs`**:
+  ```text
+  Required to listen to tab updates (such as page reloads) to synchronize the active/inactive toolbar icon and ON/OFF badge status correctly.
+  ```
+
+### 3. Remote Code Use Justification
+- **Question**: "Are you using remote code?"
+- **Answer**: Select **No, I am not using Remote code**.
+- **Justification / Explanation** *(if prompted)*:
+  ```text
+  The extension runs 100% locally. All scripts, stylesheets, and assets are packaged within the extension, and no external code is loaded at runtime.
+  ```
+
+### 4. Data Usage Disclosures
+- **Question**: "What user data do you plan to collect from users now or in the future?"
+- **Answer**: **DO NOT check any boxes**. Leave all categories (Personally identifiable information, Health, Financial, etc.) completely **UNCHECKED**, as the extension operates strictly locally and does not collect or transmit user data.
+
+- **Data Compliance Certifications**:
+  Check **all three** boxes at the bottom:
+  1. `[x]` *I do not sell or transfer user data to third parties, outside of the approved use cases*
+  2. `[x]` *I do not use or transfer user data for purposes that are unrelated to my item's single purpose*
+  3. `[x]` *I do not use or transfer user data to determine creditworthiness or for lending purposes*
+
+### 5. Privacy Policy URL
+- **Field**: `Privacy policy URL*`
+- **Value**:
+  ```text
+  https://github.com/AhmadHassan-BTed/Darkument/blob/main/PRIVACY.md
+  ```
+  *(Note: Replace `AhmadHassan-BTed` and `main` with your actual GitHub username and default branch if they differ after you push your code, so Google's reviewers can access the policy page).*
+
+---
+
+## ✉️ Settings Page Setup
+
+Go to the **Settings** tab in the developer console (left navigation bar) and complete the following steps to resolve contact email errors:
+1. Under **Developer communication**, find the **Publisher email** text box.
+2. Enter your public publisher/contact email address.
+3. Click **Save** at the top right.
+4. Go to your email inbox, find the verification email sent by Google Chrome Web Store Developer Support, and click the confirmation link.
+
