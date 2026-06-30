@@ -4,7 +4,7 @@ Use the fields below to fill out the Chrome Extension Store listing on the Googl
 
 ---
 
-## 📋 Product Details
+##  Product Details
 
 ### Title
 ```text
@@ -27,11 +27,11 @@ I'm a student who studies and works long into the night, and I made it for other
 ---
 
 Key Features:
-🚀 Native PDF Inversion: Works seamlessly with Chrome's native PDF reader. Invert both local (file:///) and web-hosted PDF files with a single click.
-⚡ High-Fidelity Rendering: Utilizes GPU-accelerated CSS blend modes for an instant, buttery-smooth color-shift without breaking elements or slowing down your computer.
-🔒 Volatile State Management: Remembers your toggle preferences per tab. Toggle dark mode on for one document without affecting your other browsing tabs.
-🛡️ Absolute Privacy: 100% local operation. No trackers, no external analytics, and no third-party APIs. Your data never leaves your browser.
-⚙️ Frictionless Setup: Includes a built-in onboarding guide to help you configure offline local file permissions in seconds.
+ Native PDF Inversion: Works seamlessly with Chrome's native PDF reader. Invert both local (file:///) and web-hosted PDF files with a single click.
+ High-Fidelity Rendering: Utilizes GPU-accelerated CSS blend modes for an instant, buttery-smooth color-shift without breaking elements or slowing down your computer.
+ Volatile State Management: Remembers your toggle preferences per tab. Toggle dark mode on for one document without affecting your other browsing tabs.
+ Absolute Privacy: 100% local operation. No trackers, no external analytics, and no third-party APIs. Your data never leaves your browser.
+ Frictionless Setup: Includes a built-in onboarding guide to help you configure offline local file permissions in seconds.
 
 How to Use:
 1. Pin Darkument to your toolbar.
@@ -55,7 +55,7 @@ English
 
 ---
 
-## 🎨 Graphic Assets
+##  Graphic Assets
 
 All graphic assets below have been prepared to meet the Chrome Web Store format requirements. They are saved in the [store_assets](./store_assets) folder.
 
@@ -87,7 +87,7 @@ All graphic assets below have been prepared to meet the Chrome Web Store format 
 
 ---
 
-## ⚙️ Additional Fields
+##  Additional Fields
 
 ### Official URL
 - **Value**: *None* (Leave empty unless associated with a verified website in your Google Search Console)
@@ -110,7 +110,7 @@ All graphic assets below have been prepared to meet the Chrome Web Store format 
 
 ---
 
-## 🔒 Privacy Practices & Permissions Justifications
+##  Privacy Practices & Permissions Justifications
 
 Go to the **Privacy practices** tab in the Chrome Web Store Developer Console to fill in these fields:
 
@@ -171,7 +171,7 @@ Provide these reasons in the text boxes next to each declared permission:
 
 ---
 
-## ✉️ Settings Page Setup
+##  Settings Page Setup
 
 Go to the **Settings** tab in the developer console (left navigation bar) and complete the following steps to resolve contact email and trader verification errors:
 

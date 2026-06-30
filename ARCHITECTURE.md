@@ -1,8 +1,8 @@
-# 🏗️ System Architecture - Darkument
+#  System Architecture - Darkument
 
 This document provides a technical deep-dive into the internal workings of Darkument.
 
-## 📐 High-Level Architecture
+##  High-Level Architecture
 
 Darkument follows the **Chrome Extension Manifest V3** architecture, utilizing a decoupled Service Worker and Content Script injection model.
 
@@ -17,7 +17,7 @@ graph TD
     G --> H[mix-blend-mode: difference]
 ```
 
-## 🛠️ Core Components
+##  Core Components
 
 ### 1. Service Worker (`background.js`)
 The "brain" of the extension. It manages:
@@ -41,7 +41,7 @@ Darkument requires elevated permissions to handle local files:
 - **`activeTab`**: To access the current page without requiring broad history access.
 - **`host_permissions`**: Specifically handles `file:///*` to support local PDF reading.
 
-## ⚡ Technical Working Mechanism
+##  Technical Working Mechanism
 
 ### The Inversion Formula
 The extension leverages the GPU-accelerated `mix-blend-mode`.
@@ -57,7 +57,7 @@ By placing a **Pure White** `(255, 255, 255)` layer with `difference` over the c
 ### PDF Handling
 Modern browsers render PDFs using an internal HTML5 viewer (like PDF.js). Since these are rendered as web content, Darkument can inject its overlay directly into the browser's PDF viewer DOM, providing a "Native Dark Mode" experience for local and remote documents.
 
-## 📂 Project Structure
+##  Project Structure
 
 - `src/manifest.json`: Configuration and permission manifest.
 - `src/background.js`: State manager and command dispatcher.

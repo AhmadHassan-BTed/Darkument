@@ -201,7 +201,7 @@ chrome.runtime.onInstalled.addListener(async (details) => {
               const notificationId = await chrome.notifications.create({
                 type: 'basic',
                 iconUrl: 'icon1.png',
-                title: '🌙 Darkument Setup Required',
+                title: ' Darkument Setup Required',
                 message: 'Please enable "Allow access to file URLs" to use Darkument with local PDF files.',
                 priority: 2,
                 buttons: [
@@ -244,7 +244,7 @@ chrome.runtime.onInstalled.addListener(async (details) => {
                   await chrome.notifications.create({
                     type: 'basic',
                     iconUrl: 'icon1.png',
-                    title: '🎉 Darkument Ready!',
+                    title: ' [SUCCESS]  Darkument Ready!',
                     message: 'File access enabled! You can now use Darkument with local PDF files.',
                     priority: 2
                   });

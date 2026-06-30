@@ -1,7 +1,7 @@
 <div align="center">
 
 
-# 🌙 Darkument
+#  Darkument
 
 **A production-grade browser extension engineered for high-fidelity color inversion on PDFs and web documents.**
 
@@ -17,17 +17,17 @@
 
 <br/>
 
-## 📋 Table of Contents
-- [✨ Features](#-features)
-- [⚡ How It Works](#-how-it-works)
-- [⚙️ Technical Architecture](#️-technical-architecture)
-- [🚀 Installation](#-installation)
-- [🛠️ Development](#️-development)
-- [🤝 Contributing](#-contributing)
+##  Table of Contents
+- [ Features](#-features)
+- [ How It Works](#-how-it-works)
+- [ Technical Architecture](#-technical-architecture)
+- [ Installation](#-installation)
+- [ Development](#-development)
+- [ Contributing](#-contributing)
 
 ---
 
-## ✨ Features
+##  Features
 
 * **High-Fidelity Inversion:** Utilizes GPU-accelerated CSS blend modes for instant, buttery-smooth color shifting without layout breaking.
 * **Native PDF Integration:** Works flawlessly within the browser's native PDF viewer, supporting both local (`file://`) and remote files.
@@ -37,7 +37,7 @@
 
 ---
 
-## ⚡ How It Works
+##  How It Works
 
 ### The "Difference" Strategy
 Unlike traditional dark mode extensions that attempt to parse and modify thousands of CSS rules (which often leads to broken layouts and high CPU usage), Darkument uses a highly efficient **Mathematical Overlay Strategy**.
@@ -55,7 +55,7 @@ This ensures that the logic is completely independent of the underlying website'
 
 ---
 
-## ⚙️ Technical Architecture
+##  Technical Architecture
 
 Darkument is built strictly on **Manifest V3** standards, ensuring long-term browser compatibility, strict security policies, and optimal performance.
 
@@ -63,15 +63,15 @@ Darkument is built strictly on **Manifest V3** standards, ensuring long-term bro
 * **Content Injection Engine:** Leverages the `chrome.scripting` API to dynamically inject non-invasive overlays into the target DOM.
 * **Design System:** A minimalist UI that provides immediate feedback via the browser's action badge and dynamic icon switching.
 
-📖 *For a deeper dive into the system design, see [ARCHITECTURE.md](ARCHITECTURE.md).*
+ *For a deeper dive into the system design, see [ARCHITECTURE.md](ARCHITECTURE.md).*
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Microsoft Edge (Recommended)
 The easiest way to get started is to install directly from the official store:
-👉 **[Download on Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/darkument/hbnldmiejhccilhonmbooncolpcfhjlp)**
+ **[Download on Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/darkument/hbnldmiejhccilhonmbooncolpcfhjlp)**
 
 ### Manual Installation (Developer Mode)
 1. Download the [Latest Release](https://github.com/Ahmad-Hassan-0/Darkument/releases).
@@ -81,16 +81,16 @@ The easiest way to get started is to install directly from the official store:
 
 ---
 
-## 🛠️ Development
+##  Development
 
 ### Project Structure
 ```text
-📦 Darkument
-├── 📂 src/             # Extension source code (Manifest, JS, Pages)
-├── 📂 assets/          # Brand assets (Icons, Promo banners, Screenshots)
-├── 📂 build/           # Compiled .zip and .crx artifacts
-├── 📂 docs/            # Technical notes and testing guides
-└── 📂 .github/         # Issue templates and CI/CD workflows
+ Darkument
+├──  src/             # Extension source code (Manifest, JS, Pages)
+├──  assets/          # Brand assets (Icons, Promo banners, Screenshots)
+├──  build/           # Compiled .zip and .crx artifacts
+├──  docs/            # Technical notes and testing guides
+└──  .github/         # Issue templates and CI/CD workflows
 
 ```
 
@@ -109,7 +109,7 @@ npm run clean
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Darkument is an open-source project. We highly value contributions that improve rendering performance, expand browser compatibility, or refine the user experience!
 
