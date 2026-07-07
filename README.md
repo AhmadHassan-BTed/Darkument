@@ -5,6 +5,7 @@
 
 **A production-grade browser extension engineered for high-fidelity color inversion on PDFs and web documents.**
 
+[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-4285F4?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/darkument/bjbjmccnbbokpjlcgamnpgpphgnbjhff?authuser=2&hl=en)
 [![Edge Addons](https://img.shields.io/badge/Edge_Addons-0078D7?style=flat-square&logo=microsoft-edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/darkument/hbnldmiejhccilhonmbooncolpcfhjlp)
 [![Manifest V3](https://img.shields.io/badge/Manifest_V3-4CAF50?style=flat-square&logo=google-chrome&logoColor=white)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-F7DF1E?style=flat-square&logoColor=black)](https://opensource.org/licenses/MIT)
@@ -69,8 +70,12 @@ Darkument is built strictly on **Manifest V3** standards, ensuring long-term bro
 
 ##  Installation
 
-### Microsoft Edge (Recommended)
-The easiest way to get started is to install directly from the official store:
+### Google Chrome (Recommended)
+The easiest way to get started on Google Chrome is to install directly from the Chrome Web Store:
+ **[Download on Chrome Web Store](https://chromewebstore.google.com/detail/darkument/bjbjmccnbbokpjlcgamnpgpphgnbjhff?authuser=2&hl=en)**
+
+### Microsoft Edge
+The easiest way to get started on Microsoft Edge is to install directly from Microsoft Edge Addons:
  **[Download on Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/darkument/hbnldmiejhccilhonmbooncolpcfhjlp)**
 
 ### Manual Installation (Developer Mode)

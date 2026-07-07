@@ -156,20 +156,14 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
 // Helper function to check file URL permissions
 async function checkFileUrlPermission() {
   try {
-    // Modern way to check permissions
-    const hasPermission = await chrome.permissions.contains({
-      origins: ["file:///*"]
+    return await new Promise((resolve) => {
+      chrome.extension.isAllowedFileSchemeAccess((isAllowed) => {
+        resolve(isAllowed);
+      });
     });
-    return hasPermission;
   } catch (error) {
-    // Fallback for older extension versions
-    try {
-      // This is deprecated but kept as fallback
-      return await chrome.extension.isAllowedFileSchemeAccess();
-    } catch (fallbackError) {
-      console.warn("Cannot check file URL this is my thing :", fallbackError);
-      return false;
-    }
+    console.warn("Cannot check file URL access:", error);
+    return false;
   }
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "darkument",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Invert PDFs, Documents and Web-Pages for late-night study sessions.",
   "main": "src/background.js",
   "scripts": {

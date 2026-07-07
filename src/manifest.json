@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Darkument",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Invert PDFs, Documents and Web-Pages. Study late-nights wish me well :) by Ahmad Hassan.",
   "action": {
     "default_title": "Activate Darkument",
@@ -21,12 +21,7 @@
   "permissions": [
     "scripting",
     "activeTab",
-    "notifications",
-    "tabs"
-  ],
-  "host_permissions": [
-    "<all_urls>",
-    "file:///*"
+    "notifications"
   ],
   "background": {
     "service_worker": "background.js"
