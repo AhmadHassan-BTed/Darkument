@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌙 Darkument
+# Darkument
 
 **A production-grade, Manifest V3 browser extension engineered for high-fidelity color inversion on PDFs and web documents.**
 
@@ -17,7 +17,7 @@
 
 ---
 
-## 📖 Core Purpose & Story
+## Core Purpose & Story
 
 Bright, glaring screens pose a major challenge for late-night productivity, particularly when reading academic PDFs or reference sheets. Traditional dark mode extensions frequently break complex page layouts, consume significant CPU resources, or fail to render inside browser-embedded PDF viewer environments.
 
@@ -25,7 +25,7 @@ Designed and developed by **Ahmad Hassan (B-Ted)**, Darkument offers a lightweig
 
 ---
 
-## ✨ Features
+## Features
 
 * **High-Fidelity Inversion:** Utilizes GPU-accelerated CSS blend modes for instant color shifting without structural layout breaking.
 * **Native PDF Integration:** Works inside the browser's native PDF viewer, supporting both local (`file://`) and remote document URLs.
@@ -35,7 +35,7 @@ Designed and developed by **Ahmad Hassan (B-Ted)**, Darkument offers a lightweig
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 Darkument adheres to the modern **Chrome Extension Manifest V3** standard, employing a decoupled background service worker and content script injection model.
 
@@ -67,7 +67,7 @@ flowchart TD
 
 ---
 
-## 🔄 Request Lifecycle & Data Flow
+## Request Lifecycle & Data Flow
 
 When the action button is toggled, the background script checks the volatile state map to determine the action required for the active tab.
 
@@ -96,7 +96,7 @@ sequenceDiagram
 
 ---
 
-## 🔬 Technical Working Mechanism
+## Technical Working Mechanism
 
 ### The "Difference" Strategy
 Instead of parsing and modifying stylesheets, Darkument applies a **Mathematical Overlay Strategy**. The overlay elements are injected as direct children of the page body.
@@ -112,7 +112,7 @@ Browsers render PDFs using internal HTML5 parsers (such as PDF.js). Because thes
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 Darkument/
@@ -131,7 +131,7 @@ Darkument/
 
 ---
 
-## 📥 Installation
+## Installation
 
 ### Google Chrome (Recommended)
 The extension can be installed directly from the Chrome Web Store:
@@ -149,7 +149,7 @@ The extension can be installed directly from Microsoft Edge Addons:
 
 ---
 
-## 🛠️ Development & Build Pipeline
+## Development & Build Pipeline
 
 ### Prerequisites
 - Node.js installed locally.
@@ -165,7 +165,7 @@ Scripts are managed using the package configuration file:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions that optimize GPU rendering, expand compatibility, or enhance the accessibility features are highly valued.
 
@@ -178,5 +178,5 @@ Contributions that optimize GPU rendering, expand compatibility, or enhance the 
 ---
 
 <p align="center">
-  Designed and maintained by <a href="https://github.com/AhmadHassan-BTed"><strong>Ahmad Hassan (B-Ted)</strong></a> ⌨
+  Designed and maintained by <a href="https://github.com/AhmadHassan-BTed"><strong>Ahmad Hassan (B-Ted)</strong></a>
 </p>
